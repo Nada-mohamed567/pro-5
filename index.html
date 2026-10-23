@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nova Products | Dashboard</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="brand">
+         <i class="fa-solid fa-layer-group"></i>
+         <span>Nova<span class="brand-light">Products</span></span>
+    </a>
+
+    <p>PRODUCT MANAGEMENT</p>
+</header>
+<!------------------------------------------------------------->
+
+<main class="container">
+
+    <section class="welcome">
+        <div>
+        <p class="eyebrow">your workspace</p>
+        <h1>Manage Your Products</h1>
+        <p class="welcome-text">Add, edit and organize your products in one place.</p>
+        </div>
+
+        <div class="welcome-icon">
+           <i class="fa-solid fa-boxes-stacked"></i>
+        </div>
+    </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+                <div>
+                    <p>Total Products</p>
+                    <h2 id="count">5 Products</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <div>
+                    <p>Management</p>
+                    <h2>Easy & Fast</h2>
+                </div>
+            </div>
+        </section>
+<!---------------------------------------------------------->
+        
+        <section class="form-section">
+            <div class="section-heading">
+                <div>
+                    <h2 id="formTitle">Add New Product</h2>
+                    <p>Enter the product information below.</p>
+                </div>
+
+                <i class="fa-solid fa-circle-plus heading-icon"></i>
+            </div>
+
+            <div class="form-grid">
+                <div class="input-group">
+                    <label for="inputProduct">Product Name</label>
+                    <input type="text" id="inputProduct" placeholder="Enter product name" >
+                </div>
+
+                <div class="input-group">
+                    <label for="inputPrice">Product Price (EGP)</label>
+                    <input type="number" id="inputPrice" placeholder="Enter price" min="0">
+                </div>
+
+                <div class="input-group description-input">
+                    <label for="inputDesc">Product Description</label>
+                    <input type="text" id="inputDesc" placeholder="Write a short description..."
+                    >
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button id="addBtn" disabled>
+                    <i class="fa-solid fa-plus"></i> Add Product </button>
+
+                <button id="cancelBtn" class="cancel-btn" hidden> Cancel Edit </button>
+            </div>
+        </section>
+  
+<!-------------------------------------------------------------------->
+
+        <section class="products-section">
+
+            <div class="products-heading">
+                <div>
+                    <h2>All Products</h2>
+                    <p>View and manage your product collection.</p>
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="searchProduct" placeholder="Search products...">
+                </div>
+            </div>
+
+            <div id="content" class="products-grid"></div>
+
+            <div id="emptyMessage" class="empty-message" hidden>
+                <i class="fa-solid fa-box-open"></i>
+                <h3>No products found</h3>
+                <p>Try another search or add a new product.</p>
+            </div>
+
+        </section>
+        
+</main>  <!-- container -->
+
+<!---------------------------------------------------->
+  <footer class="footer">
+    <h2><i class="fa-solid fa-mobile-screen-button"></i> Nova Products</h2>
+
+    <p class="footer-text">
+        Smart Product Management Made Simple
+    </p>
+
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <div class="footer-line">
+        <span><i class="fa-solid fa-heart"></i></span>
+    </div>
+
+    <p class="copyright">
+        © 2026 Nova Products. All rights reserved.
+    </p>
+</footer>       
+
+  
+
+
+
+
+<script src="javascript/script.js"></script>
+</body>
+</html>
